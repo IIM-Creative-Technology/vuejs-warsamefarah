@@ -1,10 +1,23 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <!-- <router-link to="/">Home</router-link> |
+    <router-link to="/about">About</router-link> | -->
+    <blog-head/>
+    <!-- <router-link to="/create">Form</router-link> -->
   </div>
   <router-view/>
 </template>
+
+<script>
+import BlogHead from '@/components/BlogHead.vue'
+
+export default {
+  name: 'App',
+  components: {
+    BlogHead
+  }
+}
+</script>
 
 <style>
 #app {
