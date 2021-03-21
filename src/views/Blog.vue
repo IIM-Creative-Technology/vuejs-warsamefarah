@@ -6,7 +6,7 @@
 import BlogBody from '../components/BlogBody.vue'
 
 export default {
-    name: 'Form',
+    name: 'Blog',
     components: {
         BlogBody
     }

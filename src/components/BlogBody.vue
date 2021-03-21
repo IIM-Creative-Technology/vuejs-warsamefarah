@@ -1,8 +1,15 @@
 <template>
-    <section>Example</section>
+    <div class="list">
+        <section v-for="(title) in form" v-bind:key="title.id">
+            <form-content>
+                <h2>{{form.title}}</h2>
+            </form-content>
+        </section>
+    </div>
 </template>
 
 <script>
+
 export default {
     name: 'BlogBody',
 }
